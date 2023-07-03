@@ -1,0 +1,34 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ajout de l'overflow: hidden pour empêcher le défilement */
+}
+
+#gameArea {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; /* Ajout de l'overflow: hidden pour empêcher le défilement */
+}
+
+#gameArea img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Utilisation de object-fit: cover pour redimensionner l'image tout en préservant les proportions */
+}
+
+#player {
+  width: 100px; /* Largeur du sprite */
+  height: 100px; /* Hauteur du sprite */
+  background-image: url(./img/WalkToRight/1.png); /* Chemin vers la première image PNG de ton sprite */
+}
+
+.sprite {
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
